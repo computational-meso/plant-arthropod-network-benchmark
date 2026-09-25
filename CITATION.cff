@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: >-
+  This is a provisional preview without a DOI. Please cite the exact GitHub
+  tag if reference is unavoidable; use the future EDI DOI for the final dataset.
+type: dataset
+title: Harmonized Terrestrial Plant-Arthropod Interaction Networks from Open Field Studies
+version: 0.1.0-preview.1
+date-released: 2026-09-25
+authors:
+  - family-names: Stevens
+    given-names: Alex
+    affiliation: University of Denver
+    orcid: https://orcid.org/0009-0003-0431-9289
+  - family-names: Canji
+    given-names: Theo
+    affiliation: University of Denver
+repository-code: https://github.com/computational-meso/plant-arthropod-network-benchmark
+url: https://github.com/computational-meso/plant-arthropod-network-benchmark/releases/tag/v0.1.0-preview.1
+license: CC0-1.0
+

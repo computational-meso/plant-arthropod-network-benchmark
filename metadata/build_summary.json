@@ -1,0 +1,49 @@
+{
+  "access_date": "2026-09-20",
+  "build_version": "0.1.0",
+  "competition_graphs_passing_comparative_gate": 228,
+  "competition_graphs_passing_projection_gate": 335,
+  "competition_graphs_passing_spectral_gate": 226,
+  "derived_E2": 220,
+  "derived_source_components": 10,
+  "direct_E0_E1_provisional": 126,
+  "direct_ecosystem_classes": 6,
+  "direct_independence_clusters": 38,
+  "edi_external_sources_included": 10,
+  "edi_metadata_checks_passed": 9,
+  "edi_metadata_checks_total": 10,
+  "edi_metadata_entity_count": 17,
+  "edi_metadata_status": "draft_not_submission_ready",
+  "edi_native_candidates_registered": 1,
+  "edi_native_sources_ingested": 0,
+  "edi_package_strategy": "one_synthesis_package_multiple_source_derived_components",
+  "independent_original_studies_primary_screen": 8,
+  "interaction_cells_represented": 848907,
+  "network_objects_by_evidence_class": {
+    "E0": 15,
+    "E1": 111,
+    "E2": 220
+  },
+  "network_objects_by_source": {
+    "bosc_2021_succession": 124,
+    "lascaleia_2026_new_england": 96,
+    "martins_2020_cerrado": 30,
+    "pocock_2012_norwood": 2,
+    "redmond_2018_succession": 9,
+    "saavedra_2018_succession": 36,
+    "seifert_2021_temperate": 3,
+    "shinohara_2020_grassland": 36,
+    "sousa_lopes_2024_cerrado": 1,
+    "volf_2017_temperate": 9
+  },
+  "network_objects_total": 346,
+  "positive_bipartite_links_total": 19855,
+  "qa_status_counts": {
+    "PASS": 723,
+    "PENDING": 2
+  },
+  "release_selection_rule": "publish the coherent, reproducible corpus that passes scientific and EDI-flow screening; report achieved coverage without weakening eligibility or imposing an arbitrary network-count target",
+  "release_status": "provisional; second review and manual reconstruction pending",
+  "source_records_registered": 13,
+  "sources_ingested": 10
+}

@@ -1,0 +1,78 @@
+{
+  "automatic_publish": false,
+  "checks": [
+    {
+      "category": "submission",
+      "check_id": "package_identifier_path_ready",
+      "detail": "Current package identifier: edi.PENDING.1. The curator-supported author workflow allows EDI curation staff to assign the final identifier.",
+      "passed": true
+    },
+    {
+      "category": "submission",
+      "check_id": "entity_delivery_ready",
+      "detail": "All 17 entities fit the configured 500000000-byte EDI manual-upload limit; no external static host is required for this release.",
+      "passed": true
+    },
+    {
+      "category": "submission",
+      "check_id": "creator_list_confirmed",
+      "detail": "Final creator order, names, affiliations, and ORCIDs must be explicitly confirmed.",
+      "passed": true
+    },
+    {
+      "category": "submission",
+      "check_id": "contact_email_present",
+      "detail": "A monitored contact email is required for curation and reuse questions.",
+      "passed": true
+    },
+    {
+      "category": "submission",
+      "check_id": "package_license_confirmed",
+      "detail": "The proposed synthesis-package license must be confirmed by the dataset creator.",
+      "passed": true
+    },
+    {
+      "category": "science",
+      "check_id": "all_release_qa_complete",
+      "detail": "2 QA or human-review gates are not PASS.",
+      "passed": false
+    },
+    {
+      "category": "provenance",
+      "check_id": "source_provenance_complete",
+      "detail": "10 included source-derived components have DOI and landing-page provenance.",
+      "passed": true
+    },
+    {
+      "category": "rights",
+      "check_id": "source_licenses_verified",
+      "detail": "10 included source-derived components have repository-backed license evidence and a documented redistribution basis.",
+      "passed": true
+    },
+    {
+      "category": "data",
+      "check_id": "canonical_entities_present",
+      "detail": "EML describes 17 canonical CSV data entities.",
+      "passed": true
+    },
+    {
+      "category": "safety",
+      "check_id": "automatic_publish_disabled",
+      "detail": "This workflow must never publish automatically.",
+      "passed": true
+    }
+  ],
+  "checks_passed": 9,
+  "checks_total": 10,
+  "eml_version": "2.2.0",
+  "entity_count": 17,
+  "entity_delivery_mode": "manual_portal_upload",
+  "failed_check_ids": [
+    "all_release_qa_complete"
+  ],
+  "next_action": "Resolve the failed readiness checks (all_release_qa_complete), then import or re-import and validate eml-draft.xml in ezEML, manually attach the 17 canonical CSV files, and send the package to EDI curation only after creator approval.",
+  "package_id": "edi.PENDING.1",
+  "status": "draft_not_submission_ready",
+  "submission_path": "curator_supported",
+  "upstream_provenance_count": 10
+}
