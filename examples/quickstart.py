@@ -40,7 +40,7 @@ def main() -> None:
         values="binary_value",
         aggfunc="max",
         fill_value=0,
-    ).astype("int8")
+    ).astype("int64")
     projection = incidence.T @ incidence
     host_breadth = incidence.sum(axis=0).to_numpy()
     if not np.array_equal(np.diag(projection.to_numpy()), host_breadth):
@@ -62,4 +62,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

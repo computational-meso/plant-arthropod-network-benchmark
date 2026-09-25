@@ -90,89 +90,89 @@
     {
       "format": "parquet",
       "name": "candidate_registry",
-      "path": "tables/parquet/candidate_registry.parquet"
+      "path": "data/parquet/candidate_registry.parquet"
     },
     {
       "format": "parquet",
       "name": "competition_edges",
-      "path": "tables/parquet/competition_edges.parquet"
+      "path": "data/parquet/competition_edges.parquet"
     },
     {
       "format": "parquet",
       "name": "derivations",
-      "path": "tables/parquet/derivations.parquet"
+      "path": "data/parquet/derivations.parquet"
     },
     {
       "format": "parquet",
       "name": "derived_products",
-      "path": "tables/parquet/derived_products.parquet"
+      "path": "data/parquet/derived_products.parquet"
     },
     {
       "format": "parquet",
       "name": "exclusions",
-      "path": "tables/parquet/exclusions.parquet"
+      "path": "data/parquet/exclusions.parquet"
     },
     {
       "format": "parquet",
       "name": "file_manifest",
-      "path": "tables/parquet/file_manifest.parquet"
+      "path": "data/parquet/file_manifest.parquet"
     },
     {
       "format": "parquet",
       "name": "interactions",
-      "path": "tables/parquet/interactions.parquet"
+      "path": "data/parquet/interactions.parquet"
     },
     {
       "format": "parquet",
       "name": "manual_review_queue",
-      "path": "tables/parquet/manual_review_queue.parquet"
+      "path": "data/parquet/manual_review_queue.parquet"
     },
     {
       "format": "parquet",
       "name": "network_metrics",
-      "path": "tables/parquet/network_metrics.parquet"
+      "path": "data/parquet/network_metrics.parquet"
     },
     {
       "format": "parquet",
       "name": "networks",
-      "path": "tables/parquet/networks.parquet"
+      "path": "data/parquet/networks.parquet"
     },
     {
       "format": "parquet",
       "name": "qa_results",
-      "path": "tables/parquet/qa_results.parquet"
+      "path": "data/parquet/qa_results.parquet"
     },
     {
       "format": "parquet",
       "name": "sampling_events",
-      "path": "tables/parquet/sampling_events.parquet"
+      "path": "data/parquet/sampling_events.parquet"
     },
     {
       "format": "parquet",
       "name": "search_registry",
-      "path": "tables/parquet/search_registry.parquet"
+      "path": "data/parquet/search_registry.parquet"
     },
     {
       "format": "parquet",
       "name": "sources",
-      "path": "tables/parquet/sources.parquet"
+      "path": "data/parquet/sources.parquet"
     },
     {
       "format": "parquet",
       "name": "studies",
-      "path": "tables/parquet/studies.parquet"
+      "path": "data/parquet/studies.parquet"
     },
     {
       "format": "parquet",
       "name": "taxa",
-      "path": "tables/parquet/taxa.parquet"
+      "path": "data/parquet/taxa.parquet"
     },
     {
       "format": "parquet",
       "name": "taxonomy_map",
-      "path": "tables/parquet/taxonomy_map.parquet"
+      "path": "data/parquet/taxonomy_map.parquet"
     }
   ],
   "title": "Harmonized Terrestrial Plant-Arthropod Interaction Networks from Open Field Studies",
-  "version": "0.1.0"
+  "version": "0.1.0-preview.3"
 }

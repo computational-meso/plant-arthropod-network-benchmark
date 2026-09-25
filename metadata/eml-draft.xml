@@ -1895,8 +1895,8 @@
       <entityDescription>Bipartite and projected-network summary statistics plus transparent analysis-eligibility gates.</entityDescription>
       <physical>
         <objectName>network_metrics.csv</objectName>
-        <size unit="byte">30506</size>
-        <authentication method="MD5">edd0f723b80cc389a5a27afd39d72073</authentication>
+        <size unit="byte">30520</size>
+        <authentication method="MD5">92225f3a34b601f8fdeb5b30bf6e54e8</authentication>
         <characterEncoding>UTF-8</characterEncoding>
         <dataFormat>
           <textFormat>
@@ -1926,10 +1926,10 @@
             </nominal>
           </measurementScale>
         </attribute>
-        <attribute id="attr_network_metrics_plant_count">
-          <attributeName>plant_count</attributeName>
-          <attributeLabel>Plant Count</attributeLabel>
-          <attributeDefinition>Number of plant records represented by this row.</attributeDefinition>
+        <attribute id="attr_network_metrics_active_plant_count">
+          <attributeName>active_plant_count</attributeName>
+          <attributeLabel>Active Plant Count</attributeLabel>
+          <attributeDefinition>Number of active plant records represented by this row.</attributeDefinition>
           <storageType>integer</storageType>
           <measurementScale>
             <ratio>
@@ -1942,10 +1942,10 @@
             </ratio>
           </measurementScale>
         </attribute>
-        <attribute id="attr_network_metrics_herbivore_count">
-          <attributeName>herbivore_count</attributeName>
-          <attributeLabel>Herbivore Count</attributeLabel>
-          <attributeDefinition>Number of herbivore records represented by this row.</attributeDefinition>
+        <attribute id="attr_network_metrics_active_herbivore_count">
+          <attributeName>active_herbivore_count</attributeName>
+          <attributeLabel>Active Herbivore Count</attributeLabel>
+          <attributeDefinition>Number of active herbivore records represented by this row.</attributeDefinition>
           <storageType>integer</storageType>
           <measurementScale>
             <ratio>

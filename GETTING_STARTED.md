@@ -2,7 +2,7 @@
 
 The repository is ready for analysis without downloading the larger CSV
 archive. The committed Parquet tables contain the same rows as the canonical
-CSV tables and load quickly in Python or R.
+CSV tables and load quickly in Python.
 
 ## Python
 
@@ -27,16 +27,34 @@ The example is read-only. A successful run reports the total corpus, the
 provisional direct layer, the number of dependency clusters, and a verified
 `B.T @ B` projection for one qualifying network.
 
-## R
+## Guided Jupyter notebook
 
-Install `arrow`, `dplyr`, and `tidyr`, then run:
+The notebook shows the same import path and adds a compact study summary, an
+incidence matrix, a verified shared-host projection, and the ten strongest
+shared-host pairs in one example network. Install the optional notebook tools
+and open it from the repository root:
 
-```r
-source("examples/quickstart.R")
+```sh
+python3 -m pip install -r requirements-notebook.txt
+python3 -m jupyter lab notebooks/quickstart.ipynb
 ```
 
-The R example selects the provisional direct layer and lists the positive
-interactions for one qualifying network.
+The committed notebook includes verified example output, so it is also readable
+directly on GitHub without installing anything.
+
+## Verify the complete public package
+
+Run the same integrity and graph-reconstruction checks used by continuous
+integration:
+
+```sh
+python3 scripts/validate_release.py
+```
+
+The validator checks identifiers and joins, interaction states, complete source
+grids, taxon and network counts, all 94,631 projected edges, metadata entities,
+and available checksums. In a release download it also verifies all canonical
+CSV files.
 
 ## Which files should I use?
 
@@ -52,6 +70,11 @@ interactions for one qualifying network.
 
 The release download additionally supplies all 17 tables as canonical CSVs,
 EML metadata, and checksums.
+
+In `networks`, `plant_count` and `herbivore_count` include every source-pool
+taxon represented in the bounded grid. In `network_metrics`, the explicitly
+named `active_plant_count` and `active_herbivore_count` include only taxa with
+at least one observed positive link.
 
 ## Recommended first subset
 
@@ -85,4 +108,3 @@ Read `docs/ANALYSIS_NOTES.md`, cite the original source datasets relevant to
 your subset, report the exact preview or final version, and state how repeated
 networks were handled. Do not call projected shared-host edges observed
 competition.
-

@@ -6,6 +6,7 @@
   "competition_graphs_passing_spectral_gate": 226,
   "derived_E2": 220,
   "derived_source_components": 10,
+  "distribution_version": "0.1.0-preview.3",
   "direct_E0_E1_provisional": 126,
   "direct_ecosystem_classes": 6,
   "direct_independence_clusters": 38,

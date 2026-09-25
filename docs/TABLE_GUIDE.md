@@ -49,8 +49,9 @@ Join keys:
 | `search_registry` | Search resources, queries/actions, dates, and outcomes. |
 
 Complete field types and descriptions are machine-readable in
-`metadata/datapackage.json`. Row counts and SHA-256 hashes for the canonical CSV
-entities are in `metadata/entity_manifest.csv`.
+`metadata/eml-draft.xml`. `metadata/datapackage.json` lists the CSV and Parquet
+resources. Row counts and SHA-256 hashes for the canonical CSV entities are in
+`metadata/entity_manifest.csv`.
 
 ## Important network fields
 
@@ -65,4 +66,8 @@ entities are in `metadata/entity_manifest.csv`.
   not publication or quality scores.
 - `canonical_edge_hash`: stable hash used in duplication and reconstruction
   checks.
-
+- `networks.plant_count` and `networks.herbivore_count`: all source-pool taxa in
+  the bounded interaction grid, including inactive taxa.
+- `network_metrics.active_plant_count` and
+  `network_metrics.active_herbivore_count`: taxa participating in at least one
+  observed positive interaction and therefore represented in graph summaries.
