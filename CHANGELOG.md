@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.0-preview.2 — 2026-09-25
+
+- Adds verified Python and R quick-start examples.
+- Adds installation, table, analysis, and contribution guidance.
+- Adds a minimal Python dependency specification.
+- Keeps the data tables and scientific status unchanged from preview.1.
+
 ## 0.1.0-preview.1 — 2026-09-25
 
 - First public technical preview.

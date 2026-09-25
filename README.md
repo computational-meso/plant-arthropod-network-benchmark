@@ -22,7 +22,7 @@ herbivores share a host plant; it is not evidence of realized competition.
 
 ## Preview contents
 
-Version `0.1.0-preview.1` contains:
+Version `0.1.0-preview.2` contains:
 
 - 346 bounded network objects from 10 ingested field studies;
 - 126 provisional direct E0/E1 networks from 8 studies;
@@ -37,6 +37,30 @@ The compact Parquet tables are committed under `data/parquet/`. The GitHub
 release contains the complete 17-table canonical CSV archive, EML metadata,
 checksums, and the same Parquet tables. Upstream raw archives are intentionally
 not redistributed.
+
+## Get started in five minutes
+
+You need Python 3.10 or newer and Git. Clone the repository, create an isolated
+environment, install the two analysis dependencies, and run the verified
+example:
+
+```sh
+git clone https://github.com/computational-meso/plant-arthropod-network-benchmark.git
+cd plant-arthropod-network-benchmark
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 examples/quickstart.py
+```
+
+The example loads the tables, selects the provisional E0/E1 direct layer,
+constructs one plant-by-herbivore incidence matrix, computes `B.T @ B`, and
+checks the host-breadth diagonal. It does not alter the data.
+
+Start with [GETTING_STARTED.md](GETTING_STARTED.md) for Python and R
+instructions, [docs/TABLE_GUIDE.md](docs/TABLE_GUIDE.md) for table relationships,
+and [docs/ANALYSIS_NOTES.md](docs/ANALYSIS_NOTES.md) before conducting
+cross-network statistics.
 
 ## Start analysis
 
@@ -59,8 +83,8 @@ direct = interactions[interactions["network_id"].isin(direct_ids)]
 ```
 
 Do not turn blank, unknown, or unsampled combinations into biological zeros.
-See `datapackage.json` and the table documentation in the release archive for
-field definitions.
+See `metadata/datapackage.json` and [docs/TABLE_GUIDE.md](docs/TABLE_GUIDE.md)
+for field definitions and table relationships.
 
 ## Evidence and release layers
 
@@ -106,7 +130,7 @@ source-derived component retains its CC BY 4.0 attribution requirement. See
 
 This preview has no DOI and should not be cited as the final dataset. If an
 exact reference is necessary during review or collaboration, cite the GitHub
-repository and tag `v0.1.0-preview.1`. The authoritative release is planned for
+repository and tag `v0.1.0-preview.2`. The authoritative release is planned for
 the Environmental Data Initiative and will receive a versioned DOI after human
 review and repository curation.
 
@@ -121,4 +145,3 @@ This is a selective benchmark of reusable open studies, not an exhaustive or
 representative census of global plant–arthropod interactions. Ecosystem labels
 come from the source studies. The preview does not merge external climate,
 trait, abundance, or land-use databases.
-
